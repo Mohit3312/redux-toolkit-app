@@ -13,7 +13,7 @@ const Cart = () => {
       <h3>Cart</h3>
       <div className="cardWrapper">
         {products.map((product) => (
-          <div className="cardCard">
+          <div key={product.id} className="cardCard">
             <img src={product.image} alt="Product_Image" />
             <h5>{product.title}</h5>
             <h5>{product.price}</h5>
